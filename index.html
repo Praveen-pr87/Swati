@@ -1,0 +1,3253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Swati ❤️</title>
+
+    <!-- Excel Generator -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #ffd8e8,
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            #dfccff,
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff2f7,
+            #f8f1ff
+        );
+
+    color:#392433;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+}
+
+
+/* ==========================================
+   FLOATING HEARTS
+========================================== */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-60px;
+
+    color:
+        rgba(
+            255,
+            70,
+            125,
+            .20
+        );
+
+    font-size:25px;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    animation:
+        floatHeart linear infinite;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:0;
+    }
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:
+        min(
+            1000px,
+            92%
+        );
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 0;
+}
+
+
+.hero-card{
+
+    width:100%;
+
+    padding:
+        65px 30px;
+
+    border-radius:38px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .72
+        );
+
+    backdrop-filter:
+        blur(18px);
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .85
+        );
+
+    box-shadow:
+        0 30px 90px
+        rgba(
+            120,
+            50,
+            90,
+            .17
+        );
+
+    animation:
+        heroAppear 1.2s ease;
+}
+
+
+@keyframes heroAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(35px)
+            scale(.96);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+.small-title{
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#d84c79;
+
+    margin-bottom:18px;
+}
+
+
+.hero h1{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            50px,
+            9vw,
+            95px
+        );
+
+    line-height:.95;
+
+    color:#c92f67;
+
+    margin-bottom:18px;
+}
+
+
+.hero h2{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            26px,
+            4vw,
+            43px
+        );
+
+    font-weight:normal;
+
+    color:#543441;
+}
+
+
+.hero-heart{
+
+    display:block;
+
+    font-size:68px;
+
+    margin:28px 0;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    15%{
+        transform:scale(1.2);
+    }
+
+    30%{
+        transform:scale(1);
+    }
+
+    45%{
+        transform:scale(1.12);
+    }
+}
+
+
+.hero-text{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#6d5360;
+}
+
+
+.start-btn{
+
+    margin-top:32px;
+
+    padding:
+        17px 36px;
+
+    border:none;
+
+    border-radius:50px;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #d52d68
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(
+            215,
+            47,
+            104,
+            .30
+        );
+
+    transition:.3s;
+}
+
+
+.start-btn:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+}
+
+
+/* ==========================================
+   JOURNEY
+========================================== */
+
+#journey{
+
+    padding:
+        80px 0;
+}
+
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:45px;
+}
+
+
+.section-heading h2{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            35px,
+            6vw,
+            48px
+        );
+
+    color:#c92f67;
+
+    margin-bottom:12px;
+}
+
+
+.section-heading p{
+
+    color:#765c68;
+
+    line-height:1.7;
+}
+
+
+/* ==========================================
+   PROGRESS
+========================================== */
+
+.progress-wrapper{
+
+    max-width:700px;
+
+    margin:
+        0 auto 40px;
+}
+
+
+.progress-text{
+
+    display:flex;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:8px;
+
+    color:#795d69;
+
+    font-size:14px;
+}
+
+
+.progress-bar{
+
+    height:10px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#f0dce5;
+}
+
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4f81,
+            #b72bdf
+        );
+
+    transition:
+        width .6s ease;
+}
+
+
+/* ==========================================
+   TASK CARD
+========================================== */
+
+.task{
+
+    display:none;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .80
+        );
+
+    backdrop-filter:
+        blur(16px);
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .85
+        );
+
+    border-radius:32px;
+
+    padding:38px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+        0 20px 65px
+        rgba(
+            95,
+            43,
+            73,
+            .12
+        );
+
+    animation:
+        taskIn .7s ease;
+}
+
+
+.task.active{
+    display:block;
+}
+
+
+@keyframes taskIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+.task-number{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:#ffe0eb;
+
+    color:#c92f67;
+
+    font-weight:bold;
+
+    margin-bottom:18px;
+}
+
+
+.task h3{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            26px,
+            5vw,
+            34px
+        );
+
+    color:#49313e;
+
+    margin-bottom:14px;
+}
+
+
+.task-description{
+
+    color:#765d69;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+
+/* ==========================================
+   PHOTO
+========================================== */
+
+.photo-frame{
+
+    width:100%;
+
+    max-width:560px;
+
+    height:360px;
+
+    margin:
+        20px auto;
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    background:#f7dce7;
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            0,
+            0,
+            0,
+            .13
+        );
+}
+
+
+.photo-frame img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+.photo-caption{
+
+    text-align:center;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:20px;
+
+    color:#b82f61;
+
+    margin-top:15px;
+}
+
+
+/* ==========================================
+   MEMORY GALLERY
+========================================== */
+
+.memory-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:16px;
+}
+
+
+.memory{
+
+    height:240px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(
+            0,
+            0,
+            0,
+            .12
+        );
+}
+
+
+.memory img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+
+.memory:hover img{
+
+    transform:scale(1.08);
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.task-btn{
+
+    border:none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #d12d6a
+        );
+
+    color:white;
+
+    padding:
+        14px 28px;
+
+    border-radius:40px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    margin-top:12px;
+
+    transition:.3s;
+}
+
+
+.task-btn:hover{
+
+    transform:
+        translateY(-3px);
+}
+
+
+.secondary-btn{
+
+    background:#fff0f5;
+
+    color:#c92f67;
+
+    border:
+        1px solid
+        #efbfd1;
+}
+
+
+/* ==========================================
+   LITTLE QUOTE
+========================================== */
+
+.quote-box{
+
+    text-align:center;
+
+    padding:
+        30px 20px;
+
+    margin:
+        25px 0;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            23px,
+            4vw,
+            31px
+        );
+
+    line-height:1.6;
+
+    color:#b73567;
+}
+
+
+/* ==========================================
+   QUIZ
+========================================== */
+
+.question{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:23px;
+
+    color:#49313e;
+
+    margin-bottom:20px;
+}
+
+
+.answers{
+
+    display:grid;
+
+    gap:12px;
+}
+
+
+.answer{
+
+    padding:16px;
+
+    border-radius:15px;
+
+    border:
+        2px solid
+        #f0d4df;
+
+    background:white;
+
+    cursor:pointer;
+
+    color:#654d59;
+
+    transition:.25s;
+}
+
+
+.answer:hover{
+
+    border-color:#e65b86;
+
+    background:#fff1f6;
+}
+
+
+.answer.correct{
+
+    background:#dcf8e6;
+
+    border-color:#4caf72;
+}
+
+
+.answer.wrong{
+
+    background:#ffe1e1;
+
+    border-color:#e15d5d;
+}
+
+
+/* ==========================================
+   LOVE LETTER
+========================================== */
+
+.letter{
+
+    position:relative;
+
+    background:#fffaf5;
+
+    border:
+        1px solid
+        #f0d9c5;
+
+    border-radius:10px;
+
+    padding:38px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#604b3d;
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            120,
+            80,
+            40,
+            .10
+        );
+}
+
+
+.letter::before{
+
+    content:"♥";
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    color:#e75a82;
+
+    font-size:25px;
+}
+
+
+/* ==========================================
+   CALENDAR
+========================================== */
+
+.date-box{
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff6fa,
+            #ffffff
+        );
+
+    border:
+        1px solid
+        #f3d2df;
+
+    border-radius:26px;
+
+    padding:26px;
+
+    margin-top:20px;
+}
+
+
+.date-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:18px;
+
+    margin-bottom:20px;
+}
+
+
+.field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+}
+
+
+.field label{
+
+    font-weight:600;
+
+    color:#70495b;
+}
+
+
+.field input,
+.field textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:
+        1px solid
+        #e5bfd0;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    outline:none;
+
+    background:white;
+
+    color:#4c3540;
+}
+
+
+.field input:focus,
+.field textarea:focus{
+
+    border-color:#d94f7c;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            217,
+            79,
+            124,
+            .10
+        );
+}
+
+
+.field textarea{
+
+    min-height:110px;
+
+    resize:vertical;
+}
+
+
+.date-note{
+
+    margin-top:18px;
+
+    padding:17px;
+
+    border-radius:16px;
+
+    background:#fff0f5;
+
+    color:#7b5363;
+
+    line-height:1.7;
+}
+
+
+.saved-date{
+
+    display:none;
+
+    margin-top:20px;
+
+    background:#eafff0;
+
+    border:
+        1px solid
+        #b7e6c7;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    color:#27633a;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================
+   GIFT
+========================================== */
+
+.gift-area{
+
+    text-align:center;
+
+    padding:25px 10px;
+}
+
+
+.gift{
+
+    font-size:115px;
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    transition:.4s;
+}
+
+
+.gift:hover{
+
+    transform:
+        scale(1.1)
+        rotate(-5deg);
+}
+
+
+.gift-message{
+
+    display:none;
+
+    animation:
+        giftOpen .8s ease;
+}
+
+
+.gift-message.show{
+
+    display:block;
+}
+
+
+@keyframes giftOpen{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+    }
+}
+
+
+/* ==========================================
+   FINAL
+========================================== */
+
+.final-message{
+
+    text-align:center;
+
+    padding:
+        70px 20px;
+}
+
+
+.final-heart{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+}
+
+
+.final-message h2{
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            42px,
+            8vw,
+            72px
+        );
+
+    color:#c92f67;
+
+    margin-bottom:25px;
+}
+
+
+.final-message p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#6b5360;
+
+    font-size:18px;
+}
+
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    animation:
+        confettiFall 3s linear
+        forwards;
+}
+
+
+@keyframes confettiFall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+    }
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    color:#8c6c79;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:700px){
+
+    .hero-card{
+
+        padding:
+            45px 20px;
+    }
+
+
+    .task{
+
+        padding:
+            25px 20px;
+    }
+
+
+    .memory-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .memory{
+
+        height:300px;
+    }
+
+
+    .photo-frame{
+
+        height:280px;
+    }
+
+
+    .date-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .letter{
+
+        padding:25px;
+
+        font-size:17px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- ==========================================
+     FLOATING HEARTS
+========================================== -->
+
+<div id="hearts"></div>
+
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-card">
+
+
+            <div class="small-title">
+
+                A Little Something For You
+
+            </div>
+
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+
+            <h2>
+
+                My Beautiful Swati ❤️
+
+            </h2>
+
+
+            <span class="hero-heart">
+
+                ❤️
+
+            </span>
+
+
+            <p class="hero-text">
+
+                Some people enter your life quietly...
+
+                <br>
+
+                and somehow,
+                without you even realizing it,
+                they become one of the most
+                beautiful parts of your world.
+
+                <br><br>
+
+                You became that person for me.
+
+            </p>
+
+
+            <button
+                class="start-btn"
+                onclick="startJourney()">
+
+                Open Your Surprise ✨
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     JOURNEY
+========================================== -->
+
+<section id="journey">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <h2>
+
+                A Little Journey For You 💕
+
+            </h2>
+
+
+            <p>
+
+                Take your time...
+
+                <br>
+
+                There is something waiting for you
+                behind every little step.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-wrapper">
+
+            <div class="progress-text">
+
+                <span>
+                    Your Surprise
+                </span>
+
+                <span id="progressText">
+                    0 / 7
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 1
+        ======================================= -->
+
+        <div
+            class="task active"
+            id="task1">
+
+
+            <div class="task-number">
+                01
+            </div>
+
+
+            <h3>
+
+                Before Anything Else... ❤️
+
+            </h3>
+
+
+            <p class="task-description">
+
+                I wanted the first thing you see
+                to be you.
+
+                <br><br>
+
+                Because honestly,
+                I could probably fill this entire
+                page with pictures of you and still
+                not have enough.
+
+            </p>
+
+
+            <div class="photo-frame">
+
+                <!-- CHANGE IMAGE PATH -->
+
+                <img
+                    src="/html/WhatsApp Image 2026-09-23 at 9.36.00 AM.jpeg"
+                    alt="Swati">
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                My favorite smile belongs to you. ❤️
+
+            </div>
+
+
+            <button
+                class="task-btn"
+                onclick="completeTask(1)">
+
+                Keep Going 💕
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 2
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task2">
+
+
+            <div class="task-number">
+                02
+            </div>
+
+
+            <h3>
+
+                The Little Things I Remember ❤️
+
+            </h3>
+
+
+            <p class="task-description">
+
+                It's funny...
+
+                <br><br>
+
+                When I think about us,
+                I don't only remember the big moments.
+
+                <br><br>
+
+                I remember the random conversations,
+                stupid jokes, unexpected laughs,
+                little arguments,
+                silly faces,
+                late conversations,
+                and all those tiny moments
+                that probably meant nothing to anyone else...
+
+                <br><br>
+
+                but meant everything to me.
+
+            </p>
+
+
+            <div class="quote-box">
+
+                “Some memories become special
+                simply because they happened with you.”
+
+            </div>
+
+
+            <button
+                class="task-btn"
+                onclick="completeTask(2)">
+
+                I Remember Them Too ❤️
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 3
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task3">
+
+
+            <div class="task-number">
+                03
+            </div>
+
+
+            <h3>
+
+                Our Little World 📸
+
+            </h3>
+
+
+            <p class="task-description">
+
+                A few pictures...
+
+                <br>
+
+                but behind every picture,
+                there is a story that belongs to us.
+
+            </p>
+
+
+            <div class="memory-grid">
+
+
+                <div class="memory">
+
+                    <img
+                      src="/html/WhatsApp Image 2026-09-23 at 9.36.02 AM (1).jpeg"
+                        alt="Our Memory">
+
+                </div>
+
+
+                <div class="memory">
+
+                    <img
+                        src="/html/WhatsApp Image 2026-09-23 at 9.36.02 AM (2).jpeg"
+                        alt="Our Memory">
+
+                </div>
+
+
+                <div class="memory">
+
+                    <img
+                         src="/html/WhatsApp Image 2026-09-23 at 9.36.01 AM (3).jpeg"
+                        alt="Our Memory">
+
+                </div>
+
+
+            </div>
+
+
+            <br>
+
+
+            <button
+                class="task-btn"
+                onclick="completeTask(3)">
+
+                Those Memories ❤️
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 4
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task4">
+
+
+            <div class="task-number">
+                04
+            </div>
+
+
+            <h3>
+
+                Okay... One Important Question 😏
+
+            </h3>
+
+
+            <p class="task-description">
+
+                After knowing each other for so long,
+                surely you know the answer to this one.
+
+            </p>
+
+
+            <div class="question">
+
+                What are you to me?
+
+            </div>
+
+
+            <div class="answers">
+
+
+                <div
+                    class="answer"
+                    onclick="checkAnswer(this,false)">
+
+                    Just someone I know 😐
+
+                </div>
+
+
+                <div
+                    class="answer"
+                    onclick="checkAnswer(this,false)">
+
+                    Someone who makes my life
+                    slightly more complicated 😭
+
+                </div>
+
+
+                <div
+                    class="answer"
+                    onclick="checkAnswer(this,true)">
+
+                    My favorite person
+                    and my love ❤️
+
+                </div>
+
+
+                <div
+                    class="answer"
+                    onclick="checkAnswer(this,false)">
+
+                    My permanent chocolate supplier 🍫
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                id="quizMessage"
+                style="
+                    margin-top:20px;
+                    font-weight:bold;
+                    color:#c92f67;
+                ">
+            </div>
+
+
+            <button
+                id="quizNext"
+                class="task-btn"
+                style="display:none;"
+                onclick="completeTask(4)">
+
+                You Know Me ❤️
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 5
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task5">
+
+
+            <div class="task-number">
+                05
+            </div>
+
+
+            <h3>
+
+                Something I Really Want You To Know 💌
+
+            </h3>
+
+
+            <div class="letter">
+
+                My Dearest Swati,
+
+                <br><br>
+
+                Sometimes I wonder how one person
+                can become such a big part of another
+                person's life.
+
+                <br><br>
+
+                And then I think about you.
+
+                <br><br>
+
+                When I look back at everything we've
+                shared, I don't really think about
+                the number of years.
+
+                <br><br>
+
+                I think about the moments.
+
+                <br><br>
+
+                The laughs.
+
+                <br>
+
+                The random conversations.
+
+                <br>
+
+                The stupid fights.
+
+                <br>
+
+                The apologies.
+
+                <br>
+
+                The unforgettable days.
+
+                <br>
+
+                And all those ordinary days that
+                somehow became special simply because
+                you were there.
+
+                <br><br>
+
+                We've both changed in so many ways,
+                but there is something beautiful about
+                knowing that through all those changes,
+                we still found our way back to each other.
+
+                <br><br>
+
+                Swati, I don't want to promise you
+                a perfect life.
+
+                <br><br>
+
+                I just want to keep making memories
+                with you.
+
+                <br><br>
+
+                More laughs.
+
+                <br>
+
+                More adventures.
+
+                <br>
+
+                More pictures.
+
+                <br>
+
+                More random plans.
+
+                <br>
+
+                More birthdays.
+
+                <br><br>
+
+                And hopefully many, many more moments
+                that we'll look back at someday
+                and smile about.
+
+                <br><br>
+
+                Thank you for being such a beautiful
+                part of my life.
+
+                <br><br>
+
+                Happy Birthday, my love.
+
+                <br><br>
+
+                <strong>
+                    I love you, Swati. ❤️
+                </strong>
+
+            </div>
+
+
+            <button
+                class="task-btn"
+                onclick="completeTask(5)">
+
+                Keep This Letter ❤️
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 6
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task6">
+
+
+            <div class="task-number">
+                06
+            </div>
+
+
+            <h3>
+
+                And Here's Another One... 📷
+
+            </h3>
+
+
+            <p class="task-description">
+
+                Because apparently one picture
+                wasn't enough.
+
+                <br><br>
+
+                And honestly...
+
+                I don't think I'll ever get tired
+                of looking at you.
+
+            </p>
+
+
+            <div class="photo-frame">
+
+                <!-- CHANGE IMAGE PATH -->
+
+                <img
+                    src="/html/Snapchat-1230621013.jpg"
+                    alt="Swati">
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                Still the person I want to make
+                memories with. ❤️
+
+            </div>
+
+
+            <button
+                class="task-btn"
+                onclick="completeTask(6)">
+
+                I Have One More Question... 🥺
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 7 — CALENDAR
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task7">
+
+
+            <div class="task-number">
+                07
+            </div>
+
+
+            <h3>
+
+                So... When Can I Steal Some Time With You? 🥺❤️
+
+            </h3>
+
+
+            <p class="task-description">
+
+                Okay Swati...
+
+                <br><br>
+
+                Enough emotional drama.
+
+                😌
+
+                <br><br>
+
+                I have one very important question.
+
+                <br><br>
+
+                <strong>
+                    When are you free for me?
+                </strong>
+
+                <br><br>
+
+                Pick a date and time.
+
+                <br>
+
+                I'll take that as our little
+                "you and me" appointment. ❤️
+
+            </p>
+
+
+            <div class="date-box">
+
+
+                <div class="date-grid">
+
+
+                    <div class="field">
+
+                        <label>
+                            📅 Your Free Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="freeDate">
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            ⏰ Your Free Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="freeTime">
+
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+
+                        💌 Anything You Want To Tell Me?
+
+                    </label>
+
+
+                    <textarea
+                        id="freeNote"
+                        placeholder="Example: I'm free after 7 PM... ❤️">
+                    </textarea>
+
+                </div>
+
+
+                <div class="date-note">
+
+                    Choose carefully...
+
+                    <br><br>
+
+                    Because once you choose it,
+                    I'm going to remember it. 😌❤️
+
+                </div>
+
+
+                <button
+                    class="task-btn"
+                    onclick="saveDate()">
+
+                    Save Our Date ❤️
+
+                </button>
+
+
+                <button
+                    class="task-btn secondary-btn"
+                    onclick="downloadExcel()">
+
+                    Download My Answer 📊
+
+                </button>
+
+
+                <div
+                    id="savedDate"
+                    class="saved-date">
+                </div>
+
+
+            </div>
+
+
+            <button
+                id="calendarNext"
+                class="task-btn"
+                style="display:none;"
+                onclick="completeTask(7)">
+
+                Okay... One Last Surprise 🎁
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ======================================
+             TASK 8 — GIFT
+        ======================================= -->
+
+        <div
+            class="task"
+            id="task8">
+
+
+            <div class="task-number">
+                ❤️
+            </div>
+
+
+            <h3>
+
+                Your Last Surprise 🎁
+
+            </h3>
+
+
+            <p class="task-description">
+
+                You made it.
+
+                <br><br>
+
+                Now tap the gift.
+
+            </p>
+
+
+            <div class="gift-area">
+
+
+                <div
+                    class="gift"
+                    onclick="openGift()">
+
+                    🎁
+
+                </div>
+
+
+                <div
+                    id="giftMessage"
+                    class="gift-message">
+
+
+                    <h2
+                        style="
+                            font-family:Georgia,serif;
+                            color:#c92f67;
+                            margin-bottom:20px;
+                        ">
+
+                        One More Thing... ❤️
+
+                    </h2>
+
+
+                    <p
+                        style="
+                            max-width:650px;
+                            margin:auto;
+                            line-height:1.9;
+                            color:#6b5360;
+                            font-size:18px;
+                        ">
+
+                        Swati...
+
+                        <br><br>
+
+                        If I could give you one thing
+                        today, it wouldn't be a gift.
+
+                        <br><br>
+
+                        It would be the ability to see
+                        yourself the way I see you.
+
+                        <br><br>
+
+                        Maybe then you'd understand
+                        just how special you are to me.
+
+                        <br><br>
+
+                        We've already lived so many
+                        chapters together.
+
+                        <br><br>
+
+                        But honestly?
+
+                        <br><br>
+
+                        I'm more excited about the
+                        chapters we haven't written yet.
+
+                        <br><br>
+
+                        So here's to every laugh,
+                        every adventure,
+                        every random plan,
+                        every picture,
+                        every birthday...
+
+                        <br><br>
+
+                        And every beautiful moment
+                        still waiting for us.
+
+                        <br><br>
+
+                        <strong>
+                            Happy Birthday, Swati. ❤️
+                        </strong>
+
+                    </p>
+
+
+                    <button
+                        class="task-btn"
+                        onclick="finishJourney()">
+
+                        Finish The Surprise ❤️
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             FINAL
+        ======================================= -->
+
+        <div
+            id="finalSection"
+            style="display:none;">
+
+
+            <div class="final-message">
+
+
+                <div class="final-heart">
+
+                    ❤️
+
+                </div>
+
+
+                <h2>
+
+                    Happy Birthday, Swati
+
+                </h2>
+
+
+                <p>
+
+                    Some stories are written in books.
+
+                    <br><br>
+
+                    Ours was written in conversations,
+                    memories, random moments,
+                    laughter, arguments, forgiveness,
+                    pictures and countless little things.
+
+                    <br><br>
+
+                    And the best part?
+
+                    <br><br>
+
+                    <strong>
+                        Our story is still being written.
+                    </strong>
+
+                    <br><br>
+
+                    So here's to everything we've already
+                    experienced...
+
+                    <br>
+
+                    and everything that's still waiting
+                    for us.
+
+                    <br><br>
+
+                    I love you, Swati.
+
+                    <br><br>
+
+                    <strong>
+                        Happy Birthday to my favorite person. ❤️
+                    </strong>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    Made with ❤️ especially for Swati
+
+    <br>
+
+    From someone who still chooses you. ❤️
+
+</footer>
+
+
+
+<script>
+
+
+/* ==========================================
+   SETTINGS
+========================================== */
+
+const TOTAL_STEPS = 8;
+
+let currentTask = 1;
+
+
+/* ==========================================
+   STORED DATE DATA
+========================================== */
+
+let dateChoices =
+    JSON.parse(
+        localStorage.getItem(
+            "swatiBirthdayDates"
+        )
+    ) || [];
+
+
+
+/* ==========================================
+   START JOURNEY
+========================================== */
+
+function startJourney(){
+
+    document
+        .getElementById("journey")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+    createConfetti();
+}
+
+
+
+/* ==========================================
+   COMPLETE TASK
+========================================== */
+
+function completeTask(taskNumber){
+
+    if(
+        taskNumber !== currentTask
+    ){
+        return;
+    }
+
+
+    const current =
+        document.getElementById(
+            "task" + taskNumber
+        );
+
+
+    if(current){
+
+        current.classList.remove(
+            "active"
+        );
+
+    }
+
+
+    currentTask++;
+
+
+    const next =
+        document.getElementById(
+            "task" + currentTask
+        );
+
+
+    if(next){
+
+        next.classList.add(
+            "active"
+        );
+
+
+        setTimeout(
+            function(){
+
+                next.scrollIntoView({
+                    behavior:"smooth",
+                    block:"center"
+                });
+
+            },
+            200
+        );
+
+    }
+
+
+    updateProgress();
+
+    createConfetti();
+
+}
+
+
+
+/* ==========================================
+   PROGRESS
+========================================== */
+
+function updateProgress(){
+
+    const completed =
+        currentTask - 1;
+
+
+    const percentage =
+        Math.min(
+            (
+                completed /
+                TOTAL_STEPS
+            ) * 100,
+            100
+        );
+
+
+    document
+        .getElementById(
+            "progressFill"
+        )
+        .style.width =
+        percentage + "%";
+
+
+    document
+        .getElementById(
+            "progressText"
+        )
+        .innerText =
+        completed +
+        " / " +
+        TOTAL_STEPS;
+
+}
+
+
+
+/* ==========================================
+   QUIZ
+========================================== */
+
+function checkAnswer(
+    element,
+    correct
+){
+
+    if(correct){
+
+        element.classList.add(
+            "correct"
+        );
+
+
+        document
+            .getElementById(
+                "quizMessage"
+            )
+            .innerText =
+            "Of course! You are my favorite person, Swati ❤️";
+
+
+        document
+            .getElementById(
+                "quizNext"
+            )
+            .style.display =
+            "inline-block";
+
+
+        document
+            .querySelectorAll(
+                ".answer"
+            )
+            .forEach(
+                answer => {
+
+                    answer.style.pointerEvents =
+                        "none";
+
+                }
+            );
+
+
+        createConfetti();
+
+    }
+
+    else{
+
+        element.classList.add(
+            "wrong"
+        );
+
+
+        document
+            .getElementById(
+                "quizMessage"
+            )
+            .innerText =
+            "Hmm... that's not the answer 😏 Try again ❤️";
+
+
+        setTimeout(
+            function(){
+
+                element.classList.remove(
+                    "wrong"
+                );
+
+            },
+            800
+        );
+
+    }
+
+}
+
+
+
+/* ==========================================
+   SAVE DATE
+========================================== */
+
+function saveDate(){
+
+    const date =
+        document.getElementById(
+            "freeDate"
+        ).value;
+
+
+    const time =
+        document.getElementById(
+            "freeTime"
+        ).value;
+
+
+    const note =
+        document.getElementById(
+            "freeNote"
+        ).value.trim();
+
+
+    if(
+        !date ||
+        !time
+    ){
+
+        alert(
+            "Swati ❤️ Please select both date and time."
+        );
+
+        return;
+    }
+
+
+    const choice = {
+
+        name:
+            "Swati",
+
+        date:
+            date,
+
+        time:
+            time,
+
+        note:
+            note ||
+            "No note added",
+
+        savedAt:
+            new Date().toLocaleString(
+                "en-IN"
+            )
+
+    };
+
+
+    dateChoices.push(
+        choice
+    );
+
+
+    localStorage.setItem(
+
+        "swatiBirthdayDates",
+
+        JSON.stringify(
+            dateChoices
+        )
+
+    );
+
+
+    showSavedDate(
+        choice
+    );
+
+
+    document
+        .getElementById(
+            "calendarNext"
+        )
+        .style.display =
+        "inline-block";
+
+
+    createConfetti();
+
+}
+
+
+
+/* ==========================================
+   SHOW SAVED DATE
+========================================== */
+
+function showSavedDate(
+    choice
+){
+
+    const box =
+        document.getElementById(
+            "savedDate"
+        );
+
+
+    box.style.display =
+        "block";
+
+
+    box.innerHTML = `
+
+        ❤️ <strong>It's a date!</strong>
+
+        <br><br>
+
+        📅
+        <strong>
+            ${formatDate(choice.date)}
+        </strong>
+
+        <br>
+
+        ⏰
+        <strong>
+            ${choice.time}
+        </strong>
+
+        <br>
+
+        💌
+        ${escapeHtml(choice.note)}
+
+        <br><br>
+
+        Your answer has been saved
+        on this device.
+
+    `;
+
+}
+
+
+
+/* ==========================================
+   FORMAT DATE
+========================================== */
+
+function formatDate(
+    dateString
+){
+
+    const date =
+        new Date(
+            dateString +
+            "T00:00:00"
+        );
+
+
+    return date.toLocaleDateString(
+        "en-IN",
+        {
+
+            weekday:"long",
+
+            day:"numeric",
+
+            month:"long",
+
+            year:"numeric"
+
+        }
+    );
+
+}
+
+
+
+/* ==========================================
+   DOWNLOAD EXCEL
+========================================== */
+
+function downloadExcel(){
+
+    if(
+        dateChoices.length === 0
+    ){
+
+        alert(
+            "First select a date and time ❤️"
+        );
+
+        return;
+    }
+
+
+    const excelData =
+        dateChoices.map(
+            function(item,index){
+
+                return {
+
+                    "Choice #":
+                        index + 1,
+
+                    "Name":
+                        item.name,
+
+                    "Date":
+                        item.date,
+
+                    "Time":
+                        item.time,
+
+                    "Message":
+                        item.note,
+
+                    "Saved At":
+                        item.savedAt
+
+                };
+
+            }
+        );
+
+
+    const worksheet =
+        XLSX.utils.json_to_sheet(
+            excelData
+        );
+
+
+    worksheet["!cols"] = [
+
+        {
+            wch:10
+        },
+
+        {
+            wch:15
+        },
+
+        {
+            wch:15
+        },
+
+        {
+            wch:12
+        },
+
+        {
+            wch:45
+        },
+
+        {
+            wch:25
+        }
+
+    ];
+
+
+    const workbook =
+        XLSX.utils.book_new();
+
+
+    XLSX.utils.book_append_sheet(
+
+        workbook,
+
+        worksheet,
+
+        "Swati Free Time"
+
+    );
+
+
+    XLSX.writeFile(
+
+        workbook,
+
+        "Swati_Free_Time.xlsx"
+
+    );
+
+}
+
+
+
+/* ==========================================
+   GIFT
+========================================== */
+
+function openGift(){
+
+    document
+        .getElementById(
+            "giftMessage"
+        )
+        .classList.add(
+            "show"
+        );
+
+
+    createConfetti();
+
+    createManyHearts();
+
+}
+
+
+
+/* ==========================================
+   FINISH
+========================================== */
+
+function finishJourney(){
+
+    document
+        .getElementById(
+            "task8"
+        )
+        .classList.remove(
+            "active"
+        );
+
+
+    document
+        .getElementById(
+            "finalSection"
+        )
+        .style.display =
+        "block";
+
+
+    document
+        .getElementById(
+            "finalSection"
+        )
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+
+    document
+        .getElementById(
+            "progressFill"
+        )
+        .style.width =
+        "100%";
+
+
+    document
+        .getElementById(
+            "progressText"
+        )
+        .innerText =
+        "8 / 8";
+
+
+    createConfetti();
+
+
+    setTimeout(
+        createConfetti,
+        700
+    );
+
+
+    setTimeout(
+        createConfetti,
+        1400
+    );
+
+}
+
+
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+function createConfetti(){
+
+    const symbols = [
+
+        "❤️",
+        "💕",
+        "✨",
+        "🎉",
+        "💖",
+        "🌸",
+        "⭐",
+        "🎀"
+
+    ];
+
+
+    for(
+        let i = 0;
+        i < 35;
+        i++
+    ){
+
+        const item =
+            document.createElement(
+                "div"
+            );
+
+
+        item.className =
+            "confetti";
+
+
+        item.innerText =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+
+        item.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        item.style.fontSize =
+            (
+                10 +
+                Math.random() *
+                15
+            ) +
+            "px";
+
+
+        item.style.animationDuration =
+            (
+                2 +
+                Math.random() *
+                2
+            ) +
+            "s";
+
+
+        document.body.appendChild(
+            item
+        );
+
+
+        setTimeout(
+            function(){
+
+                item.remove();
+
+            },
+            4500
+        );
+
+    }
+
+}
+
+
+
+/* ==========================================
+   FLOATING HEART
+========================================== */
+
+function createHeart(){
+
+    const heart =
+        document.createElement(
+            "div"
+        );
+
+
+    heart.className =
+        "heart";
+
+
+    heart.innerText =
+        Math.random() > .5
+            ? "♥"
+            : "♡";
+
+
+    heart.style.left =
+        Math.random() *
+        100 +
+        "vw";
+
+
+    heart.style.fontSize =
+        (
+            15 +
+            Math.random() *
+            30
+        ) +
+        "px";
+
+
+    heart.style.animationDuration =
+        (
+            7 +
+            Math.random() *
+            8
+        ) +
+        "s";
+
+
+    document
+        .getElementById(
+            "hearts"
+        )
+        .appendChild(
+            heart
+        );
+
+
+    setTimeout(
+        function(){
+
+            heart.remove();
+
+        },
+        15000
+    );
+
+}
+
+
+setInterval(
+    createHeart,
+    900
+);
+
+
+
+/* ==========================================
+   HEART BURST
+========================================== */
+
+function createManyHearts(){
+
+    for(
+        let i = 0;
+        i < 30;
+        i++
+    ){
+
+        setTimeout(
+            createHeart,
+            i * 80
+        );
+
+    }
+
+}
+
+
+
+/* ==========================================
+   ESCAPE HTML
+========================================== */
+
+function escapeHtml(
+    text
+){
+
+    const div =
+        document.createElement(
+            "div"
+        );
+
+
+    div.textContent =
+        text;
+
+
+    return div.innerHTML;
+
+}
+
+
+
+/* ==========================================
+   LOAD PREVIOUS DATE
+========================================== */
+
+function loadLastChoice(){
+
+    if(
+        dateChoices.length === 0
+    ){
+
+        return;
+
+    }
+
+
+    const last =
+        dateChoices[
+            dateChoices.length - 1
+        ];
+
+
+    document
+        .getElementById(
+            "freeDate"
+        )
+        .value =
+        last.date;
+
+
+    document
+        .getElementById(
+            "freeTime"
+        )
+        .value =
+        last.time;
+
+
+    document
+        .getElementById(
+            "freeNote"
+        )
+        .value =
+        last.note;
+
+
+    showSavedDate(
+        last
+    );
+
+
+    document
+        .getElementById(
+            "calendarNext"
+        )
+        .style.display =
+        "inline-block";
+
+}
+
+
+
+/* ==========================================
+   INITIALIZE
+========================================== */
+
+updateProgress();
+
+loadLastChoice();
+
+</script>
+
+</body>
+
+</html>
+
